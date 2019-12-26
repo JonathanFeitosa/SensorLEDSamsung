@@ -1,0 +1,103 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:2:1-25:12
+	package
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:3:5-34
+	android:versionName
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:7:5-78
+	android:name
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:7:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:8:22-78
+uses-permission#android.permission.BODY_SENSORS
+ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:9:5-71
+	android:name
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:9:22-68
+uses-permission#com.samsung.permission.SSENSOR_HRM_RAW_PPG
+ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:10:22-79
+uses-permission#com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY
+ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:11:5-117
+	android:name
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:11:22-114
+application
+ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:13:5-23:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\jonathan.souza\.android\build-cache\b631255a92bf7efba2aa850bb74992daedfdb556\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\jonathan.souza\.android\build-cache\622eb58b4be4b04c69324e837e738b3b45343fc4\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\jonathan.souza\.android\build-cache\eb482a284737dd2e1f886ebe076514a1f342dc13\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\jonathan.souza\.android\build-cache\fcb259fdb94e5c32b191892cdff87fe87b49b7c4\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\jonathan.souza\.android\build-cache\ce023e30b521c3f4b2f93caa44be85111225c2e0\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\jonathan.souza\.android\build-cache\0875cfcf496cbbf99a9778f190d0b691ebe5a95c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\jonathan.souza\.android\build-cache\0828a1a78fa9a1565e8e2c115c88bce3aa60db54\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\jonathan.souza\.android\build-cache\82e0c47ba7e260dff095f2b983bd40189682a664\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\jonathan.souza\.android\build-cache\bada9c73f8f0f451505b6009508ac4dd0e530c72\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:14:9-41
+	android:supportsRtl
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:15:9-35
+	android:allowBackup
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:13:18-44
+	android:icon
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:13:45-79
+	android:theme
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:15:36-67
+activity#com.samsung.sdktest.SsensorActivity
+ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:16:9-22:20
+	android:name
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:16:19-69
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml:20:27-74
+uses-sdk
+INJECTED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\jonathan.souza\.android\build-cache\b631255a92bf7efba2aa850bb74992daedfdb556\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\jonathan.souza\.android\build-cache\622eb58b4be4b04c69324e837e738b3b45343fc4\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\jonathan.souza\.android\build-cache\eb482a284737dd2e1f886ebe076514a1f342dc13\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\jonathan.souza\.android\build-cache\fcb259fdb94e5c32b191892cdff87fe87b49b7c4\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\jonathan.souza\.android\build-cache\ce023e30b521c3f4b2f93caa44be85111225c2e0\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\jonathan.souza\.android\build-cache\0875cfcf496cbbf99a9778f190d0b691ebe5a95c\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\jonathan.souza\.android\build-cache\0828a1a78fa9a1565e8e2c115c88bce3aa60db54\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\jonathan.souza\.android\build-cache\82e0c47ba7e260dff095f2b983bd40189682a664\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\jonathan.souza\.android\build-cache\bada9c73f8f0f451505b6009508ac4dd0e530c72\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\jonathan.souza\.android\build-cache\b631255a92bf7efba2aa850bb74992daedfdb556\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jonathan.souza\Desktop\SSensorHealthSDKExample\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\jonathan.souza\.android\build-cache\b631255a92bf7efba2aa850bb74992daedfdb556\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\jonathan.souza\.android\build-cache\622eb58b4be4b04c69324e837e738b3b45343fc4\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\jonathan.souza\.android\build-cache\eb482a284737dd2e1f886ebe076514a1f342dc13\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\jonathan.souza\.android\build-cache\fcb259fdb94e5c32b191892cdff87fe87b49b7c4\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\jonathan.souza\.android\build-cache\ce023e30b521c3f4b2f93caa44be85111225c2e0\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\jonathan.souza\.android\build-cache\0875cfcf496cbbf99a9778f190d0b691ebe5a95c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\jonathan.souza\.android\build-cache\0828a1a78fa9a1565e8e2c115c88bce3aa60db54\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\jonathan.souza\.android\build-cache\82e0c47ba7e260dff095f2b983bd40189682a664\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\jonathan.souza\.android\build-cache\bada9c73f8f0f451505b6009508ac4dd0e530c72\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\jonathan.souza\.android\build-cache\b631255a92bf7efba2aa850bb74992daedfdb556\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\jonathan.souza\.android\build-cache\b631255a92bf7efba2aa850bb74992daedfdb556\output\AndroidManifest.xml:26:9-47
