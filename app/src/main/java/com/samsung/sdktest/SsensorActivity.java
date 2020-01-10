@@ -24,15 +24,11 @@ public class SsensorActivity extends Activity {
 
     Ssensor ir = null;
     Ssensor red = null;
-    Ssensor green = null;
-    Ssensor blue = null;
 
     //private final static int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 101;
     ToggleButton btn_start = null;
     TextView tIR = null;
     TextView tRED = null;
-    TextView tGreen = null;
-    TextView tBlue = null;
 
     SSListener mSSListener = null;
 
@@ -51,8 +47,6 @@ public class SsensorActivity extends Activity {
         btn_start = (ToggleButton) findViewById(R.id.btn_start);
         tIR = (TextView) findViewById(R.id.tIR);
         tRED = (TextView) findViewById(R.id.tRED);
-        tGreen = (TextView) findViewById(R.id.tGREEN);
-        tBlue = (TextView) findViewById(R.id.tBLUE);
 
         mSSListener = new SSListener();
         if (btn_start != null) {
@@ -72,10 +66,6 @@ public class SsensorActivity extends Activity {
                                     mSSensorManager.unregisterListener(mSSListener,ir);
                                 if(red != null)
                                     mSSensorManager.unregisterListener(mSSListener,red);
-                                if(green != null)
-                                    mSSensorManager.unregisterListener(mSSListener,green);
-                                if (blue != null)
-                                    mSSensorManager.unregisterListener(mSSListener,blue);
                             }
                         } else {
                             mSsensorExtension = new SsensorExtension();
@@ -84,8 +74,6 @@ public class SsensorActivity extends Activity {
                                 mSSensorManager = new SsensorManager(mContext, mSsensorExtension);
                                 ir = mSSensorManager.getDefaultSensor(Ssensor.TYPE_HRM_LED_IR);
                                 red = mSSensorManager.getDefaultSensor(Ssensor.TYPE_HRM_LED_RED);
-                                green = mSSensorManager.getDefaultSensor(Ssensor.TYPE_HRM_LED_GREEN);
-                                blue = mSSensorManager.getDefaultSensor(Ssensor.TYPE_HRM_LED_BLUE);
                             } catch (SsdkUnsupportedException e) {
                                 Toast.makeText(mContext, e.getMessage(),Toast.LENGTH_LONG).show();
                                 mContext.finish();
@@ -103,10 +91,6 @@ public class SsensorActivity extends Activity {
                                     mSSensorManager.registerListener(mSSListener, ir, SensorManager.SENSOR_DELAY_NORMAL);
                                 if(red != null)
                                     mSSensorManager.registerListener(mSSListener, red, SensorManager.SENSOR_DELAY_NORMAL);
-                                if(green != null)
-                                    mSSensorManager.registerListener(mSSListener, green, SensorManager.SENSOR_DELAY_NORMAL);
-                                if(blue != null)
-                                    mSSensorManager.registerListener(mSSListener, blue, SensorManager.SENSOR_DELAY_NORMAL);
                             }
                         }
                     } catch (IllegalArgumentException e) {
@@ -163,14 +147,6 @@ public class SsensorActivity extends Activity {
                 mSSensorManager.unregisterListener(mSSListener, red);
                 tRED.setText("");
             }
-            if (green != null) {
-                mSSensorManager.unregisterListener(mSSListener, green);
-                tGreen.setText("");
-            }
-            if (blue != null) {
-                mSSensorManager.unregisterListener(mSSListener, blue);
-                tBlue.setText("");
-            }
             btn_start.setSelected(false);
             btn_start.setText(btn_start.getTextOff());
         } catch (IllegalArgumentException e) {
@@ -199,10 +175,12 @@ public class SsensorActivity extends Activity {
                             .append("SDK Version : "
                                     + mSsensorExtension.getVersionName() + "\n")
                             .append("MaxRange : " + s.getMaxRange() + "\n")
+                            .append("MinDelay : " + s.getMinDelay() + "\n")
                             .append("Resolution : " + s.getResolution() + "\n")
                             .append("FifoMaxEventCount : " + s.getFifoMaxEventCount()
                                     + "\n").append("Power : " + s.getPower() + "\n")
                             .append("----------------------------\n")
+                            .append("Accuracy : " + event.accuracy + "\n")
                             .append("IR RAW DATA : " + event.values[0] + "\n");
 
                     tIR.setText(sb.toString());
@@ -215,46 +193,16 @@ public class SsensorActivity extends Activity {
                             .append("SDK Version : "
                                     + mSsensorExtension.getVersionName() + "\n")
                             .append("MaxRange : " + s.getMaxRange() + "\n")
+                            .append("MinDelay : " + s.getMinDelay() + "\n")
                             .append("Resolution : " + s.getResolution() + "\n")
                             .append("FifoMaxEventCount : " + s.getFifoMaxEventCount()
                                     + "\n")
                             .append("Power : " + s.getPower() + "\n")
                             .append("----------------------------\n")
+                            .append("Accuracy : " + event.accuracy + "\n")
                             .append("RED LED RAW DATA : " + event.values[0] + "\n");
                     tRED.setText(sb.toString());
-                    break;
-                case Ssensor.TYPE_HRM_LED_GREEN:
-                    sb.append("==== Sensor Information ====\n")
-                            .append("Name : " + s.getName() + "\n")
-                            .append("Vendor : " + s.getVendor() + "\n")
-                            .append("Type : " + s.getType() + "\n")
-                            .append("SDK Version : "
-                                    + mSsensorExtension.getVersionName() + "\n")
-                            .append("MaxRange : " + s.getMaxRange() + "\n")
-                            .append("Resolution : " + s.getResolution() + "\n")
-                            .append("FifoMaxEventCount : " + s.getFifoMaxEventCount()
-                                    + "\n")
-                            .append("Power : " + s.getPower() + "\n")
-                            .append("----------------------------\n")
-                            .append("GREEN LED RAW DATA : " + event.values[0] + "\n");
-                    tGreen.setText(sb.toString());
-                    break;
-                case Ssensor.TYPE_HRM_LED_BLUE:
-                    sb.append("==== Sensor Information ====\n")
-                            .append("Name : " + s.getName() + "\n")
-                            .append("Vendor : " + s.getVendor() + "\n")
-                            .append("Type : " + s.getType() + "\n")
-                            .append("SDK Version : "
-                                    + mSsensorExtension.getVersionName() + "\n")
-                            .append("MaxRange : " + s.getMaxRange() + "\n")
-                            .append("Resolution : " + s.getResolution() + "\n")
-                            .append("FifoMaxEventCount : " + s.getFifoMaxEventCount()
-                                    + "\n")
-                            .append("Power : " + s.getPower() + "\n")
-                            .append("----------------------------\n")
-                            .append("BLUE LED RAW DATA : " + event.values[0] + "\n");
-                    tBlue.setText(sb.toString());
-                    break;
+                break;
             }
         }
 

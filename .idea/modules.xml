@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SSensorHealthSDKExample.iml" filepath="$PROJECT_DIR$/SSensorHealthSDKExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SensorLEDSamsung.iml" filepath="$PROJECT_DIR$/SensorLEDSamsung.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
